@@ -14,5 +14,26 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #fafbfd;
+}
+
+.header {
+    background-color: #373A3C;
+}
+
+.header div img {
+    height:200px;
+}
+
+.progress-bar, .progress {
+    height: 7px;
+}
+
+.habilidades, .experiencia {
+    min-height:600px;
+}
+
+.text-justify{
+    text-align:justify;
 }
