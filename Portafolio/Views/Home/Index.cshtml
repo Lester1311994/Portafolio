@@ -1,8 +1,10 @@
-﻿@{
+﻿@model HomeIndexViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <partial name="_Presentacion" />
 
-<partial name="_Habilidades"/>
+<partial name="_Habilidades" />
 
+<partial name="_Proyectos" model="Model.Proyectos"/>

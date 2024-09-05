@@ -1,3 +1,5 @@
+using Portafolio.Services;
+
 namespace Portafolio
 {
     public class Program
@@ -8,6 +10,7 @@ namespace Portafolio
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddTransient<IRepositorioProyectos, RepositorioProyectos>();
 
             var app = builder.Build();
 
