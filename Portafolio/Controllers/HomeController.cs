@@ -27,9 +27,10 @@ namespace Portafolio.Controllers
             return View(proyectos);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Proyectos()
         {
-            return View();
+            var proyectos = _repositorioProyectos.ListaProyectos().ToList();
+            return View(proyectos);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
