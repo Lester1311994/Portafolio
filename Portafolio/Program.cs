@@ -11,6 +11,7 @@ namespace Portafolio
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddTransient<IRepositorioProyectos, RepositorioProyectos>();
+            builder.Services.AddTransient<IServiceEmail,ServiceEmail>();
 
             var app = builder.Build();
 
